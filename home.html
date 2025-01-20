@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metaverse Container</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .bg-container {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      position: relative;
+      color: white;
+    }
+    
+    .navbar-custom {
+      background-color: transparent !important;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar-nav .nav-link {
+      color: white !important;
+
+    }
+    
+    .content {
+      padding-top: 150px;
+      text-align: left;
+    }
+
+    .content h1 {
+      font-size: 65px;
+      font-weight: bold;
+    }
+
+   .content h2 {
+    font-size: xx-large;
+   }
+   .content h4 {
+    font-size: smaller;
+   }
+
+    .btn-custom {
+      background-color: purple;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+
+    .container2{
+      background: #000;
+      height: 500px;
+    }
+
+    .how-it-works {
+      padding: 50px 0;
+      text-align: center;
+      color: white;
+    
+    }
+    
+    .how-it-works h2 {
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+      color: #d3b4ff;
+    }
+
+    .how-it-works .icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #d3b4ff;
+    }
+
+    .how-it-works p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+     
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a7699e;
+      padding: 20px;
+      border-radius: 100%;
+      height: 250px;
+      margin-bottom: 10px;
+    }
+
+    .container-3 {
+    background-color: #000000;
+    height: 550px;
+    margin-top: -70px;
+}
+
+.image-stack {
+    position: relative;
+    width: 80%;
+    margin-bottom: 300px;
+}
+
+.img-1, .img-2, .img-3 {
+    border-radius: 10px;
+}
+
+.img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: purple;
+}
+
+button.btn-outline-light {
+    color: purple;
+    border: 2px solid purple;
+}
+
+button.btn-outline-light:hover {
+    background-color: purple;
+    color: white;
+}
+
+button.btn-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+}
+
+ .container-4{
+  background-color: #000;
+  margin-top: -30px;
+  height: 500px;
+ }
+.heading {
+  font-size: 2.5rem;
+}
+
+.red-text {
+  color: red;
+  font-size: xx-large;
+}
+
+.white-text {
+  color: white;
+  font-size: xx-large;
+}
+.rounded-image {
+  border-radius: 0 50px 0 50px;
+  z-index: 1;
+  border: 2px solid red;
+}
+
+.layered-image {
+  width: 40%;
+  height: 150px;
+  top: 30%;
+  right: 10%;
+  border-radius: 0 50px 0 50px;
+  z-index: 2;
+  border: 2px solid red;
+}
+.container-5{
+  background-color: #000;
+  margin-top: -120px;
+  height: 890px;
+}
+.container-m{
+  height: 550px;
+  width: 90%;
+  /* justify-content: center; */
+  border: 2px solid #000;
+  margin-left: 75px;
+ } 
+.overlay-box {
+  background: linear-gradient(135deg, rgb(148, 81, 145), purple, rgb(90, 79, 155));
+color: white;
+padding: 40px;
+border-radius: 15px;
+text-align: center;
+margin-left: 200px;
+width: 70%;
+ position: relative;
+top: 15%; 
+}
+.btn-custom {
+background-color: black;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+}
+.btn-custom:hover {
+background-color: white;
+color: black;
+}
+
+.container-footer {
+  background-color: #000; 
+  color: #fff; 
+  padding: 40px;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+}
+
+.img-footer {
+  max-width: 100px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: purple;
+  color: white;
+}
+
+.contact-input::placeholder {
+  color: #aaa;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00bcd4; /* Accent color on hover */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand text-white" href="#">de3Verse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="#">Explore</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">Privacy Policy</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">T&C</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link btn-outline-light" href="#">Connect Wallet</a></li>
+      </ul>
+    </div>
+  </nav>
+<!--sec 1-->
+  <div class="bg-container d-flex justify-content-start align-items-start">
+    <div class="content">
+      <h1>METAVERSE</h1>
+      <br>
+      <br>
+      <h2>Dive Into New World</h2>
+      <br>
+      <br>
+      <h4>With virtual technology you can see the digital world </h4>
+       <h4> feel more real and you can play the game with</h4>
+        <h4> a new style.</h4>
+        <br>
+      <a href="#" class="btn btn-custom">Explore Now</a>
+      <a href="#" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </div>
+  <!--sec 2-->
+  <div class="container2">
+   <section class="how-it-works">
+     <div class="container">
+       <h2>How It Works</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="icon-container mx-auto">
+            <i class="icon fas fa-map"></i>
+          </div>
+          <h4>Explore</h4>
+          <p>Explore Central City and visit other land to have a wonderful experience.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="icon-container mx-auto">
+            <i class="icon fas fa-home"></i> 
+          </div>
+          <h4>Own a Land</h4>
+          <p>Personalize your land with different assets such as home, swimming pools & NFTs.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="icon-container mx-auto">
+            <i class="icon fas fa-calendar-alt"></i>
+          </div>
+          <h4>Events and Play</h4>
+          <p>Attend, enjoy, and host in metaverse events. Introducing hunt and race as our first games.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="icon-container mx-auto">
+            <i class="icon fas fa-users"></i>
+          </div>
+          <h4>Meet Others</h4>
+          <p>Meet others in an interactive and social virtual world. Invite friends to visit your land.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <!--sec 3-->
+  <div class="container-3">   
+<div class="container mt-5">
+  <div class="row align-items-center" style="height: 100vh;">
+      <div class="col-md-6 position-relative d-flex justify-content-center align-items-center">
+          <div class="image-stack">
+              <img src="rob1.webp" alt="Image 1" class="img-fluid img-1 mb-5">
+          </div>
+      </div>
+     
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <h2 class="text-light mb-4">MetaSupport</h2>
+          <button class="btn btn-outline-light mb-4 text-center">Get a Quote</button>
+            <div class="dropdown mb-3 w-100">
+              <button class="btn btn-transparent text-light dropdown-toggle btn-outline-light" type="button">
+                  Upcoming System                                           
+              </button>
+              <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+          </div>  
+       
+           <div class="dropdown mb-3 w-100 ">
+              <button class="btn btn-transparent text-light dropdown-toggle btn-outline-light" type="button">
+                  Upcoming System                                          
+              </button>
+              <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+          </div>
+
+          <div class="dropdown mb-3 w-100">
+              <button class="btn btn-transparent text-light dropdown-toggle btn-outline-light" type="button">
+                  Responsible Innovation                                   
+              </button>
+              <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+  </div> 
+<!--sec 4-->
+
+<div class="container-4">
+  <div class="row">
+   
+    <div class="col-md-6">
+   
+      <h2 class="heading">
+        <span class="red-text">Play and join events </span>
+        <br>
+        <span class="white-text">by friends of metaverse.</span>
+      </h2>
+
+        <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card bg bg-transparent text-light border-light">
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <br>
+              <br>
+              <h6 class="card-text">Description for card 1.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card bg bg-danger">
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <br>
+              <br>
+              <h6 class="card-text">Description for card 2.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card bg bg-transparent border-light text-light">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <br>
+              <br>
+              <h6 class="card-text">Description for card 3.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="col-md-6 position-relative">
+
+      <img src="rob3.webp" alt="Image 1" class="img-fluid rounded-image">
+
+      <img src="rob4.webp" alt="Image 2" class="img-fluid layered-image position-absolute">
+    </div>
+  </div>
+</div>
+
+<!--sec 5-->
+<div class="container-5">
+
+  <div class="overlay-box">
+      <h1>Get Started With <span style="color: #f5a9f2;">META WORLD</span></h1>
+      <h6>The Metaverse is the next evolution of social connection.</h6>
+      <button class="btn btn-custom">Get Started</button>
+  </div>
+  <div class="container-m">
+    <iframe  style="height: 100%;width: 100%;border: 0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Gawalior+Society+Sector+17+A+Gulzar+E+Hijri+Scheme+33,+Karachi,+Pakistan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+</div>
+
+</div>
+<!--SECtion FOOTER-->
+
+
+<footer class="container-footer">
+  <div class="row-footer">
+    <div class="footer-col">
+      <img src="" alt="Company Logo" class="img-footer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam in laboriosam eveniet expedita veritatis hic id ex possimus ratione recusandae.</p>
+      <form>
+        <input type="submit" class="contact-input" placeholder="Contact Us">
+      </form>
+    </div>
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <ul class="footer-links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">In Press</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul class="footer-links">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Online Chat</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Ticketing</a></li>
+        <li><a href="#">Call Center</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>FAQ</h3>
+      <ul class="footer-links">
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Manage Deliveries</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        
+    }
+ 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .de3Verse {
+    font-weight: bold;
+    font-size: 24px;
+    color: whitesmoke;
+  }
+  .de3Verse::first-letter{
+    color: purple;
+  }
+
+  .sign-in-section {
+    text-align: center;
+    margin-top: 80px;
+    height: 500px;
+ 
+    
+  }
+
+  .sign-in-section h1 {
+    font-size: 55px;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+  }
+
+  .sign-in-section p {
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+
+ 
+  .login {
+    text-align: center;
+    margin-top: 50px;
+    width: 20%;
+    background-color: rgb(126, 126, 165);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+  
+
+  .password {
+    text-align: center;
+    margin-top: 20px;
+    width: 20%;
+    background-color: rgb(126, 126, 165);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .options{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .options label {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .login-button {
+    background-color: #ff1493;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    font-size: 16px;
+    width: 22%;
+  }
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="de3Verse">de3Verse</div>
+  </div>
+  <div class="sign-in-section">
+    <h1>Sign In</h1>
+    <p>Sign In and start managing your candidates!</p>
+
+    <div class="login-form">
+        <input type="text" class="login" name="login" id="" placeholder="Log-in">
+    </div>
+        
+
+      
+      <div class="password-form">
+      <input type="password" class="password" name="password" id="" placeholder="Enter password">
+      </div>
+    
+
+
+
+    <div class="options">
+      <div>
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div>
+        <a href="#">Forgot password ?</a>
+      </div>
+    </div> 
+    <br>
+    <button class="login-button">Login</button>
+
+  </div>
+</body>
+</html>

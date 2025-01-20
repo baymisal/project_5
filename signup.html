@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+    .header{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .de3Verse{
+        font-weight: bold;
+        font-size: xx-large;
+        color: antiquewhite;
+
+    }
+    .de3Verse::first-letter{
+        color: purple;
+    }
+    .sign-up{
+        margin-top: 65px;
+        text-align: center;
+        height: 600px;
+    }
+    h1{
+        font-size: 55px;
+        margin-bottom: 40px;
+        color: antiquewhite;
+    }
+    p{
+        margin-bottom: 20px;
+        color: antiquewhite;
+    }
+    .username {
+    text-align: center;
+    margin-top: 50px;
+    width: 20%;
+    background-color: rgb(126, 126, 165);
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+   .email {
+    text-align: center;
+    margin-top: 20px;
+    width: 20%;
+    background-color: rgb(126, 126, 165);
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  .password{
+    text-align: center;
+    margin-top: 20px;
+    width: 20%;
+    background-color: rgb(126, 126, 165);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .confirmpassword{
+    text-align: center;
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(126, 126, 165);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+ 
+  .options{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .options label {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .login-button {
+    background-color: #ff1493;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    font-size: 16px;
+    width: 22%;
+  }
+  @media (max-width: 786px) {
+            .form-input, .options, .login-button {
+                width: 60%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+  @media (max-width: 480px) {
+            .form-input, .options, .login-button {
+                width: 80%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+</style>
+<body>
+    <div class="header">
+        <div class="de3Verse">de3Verse</div>
+    </div>
+    <div class="sign-up">
+        <h1>Sign Up</h1>
+        <p>Sign up and start managing your candidates!</p>
+   
+
+    <div class="username-form">
+        <input type="text" class="username" name="username" id="" placeholder="Username">
+    </div>
+
+    <div class="email-form">
+        <input type="text" class="email" name="email" id="" placeholder="Enter EMAIL">
+    </div>
+
+    <div class="password-form">
+        <input type="password" class="password" name="password" id="" placeholder="Enter password" >
+    </div>
+
+    <div class="confirmpassword-form">
+        <input type="password" class="confirmpassword" id="" placeholder="Confirm-Password">
+    </div>
+ 
+    <div class="options">
+        <div>
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div>
+          <a href="#">Forgot password ?</a>
+        </div>
+      </div> 
+      <br>
+      <button class="login-button">Login</button>
+  
+    </div>
+    
+</body>
+</html>

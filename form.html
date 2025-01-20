@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+    margin-top: 20px;
+    /* justify-content: right; */
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: medium;
+    /* justify-content: right; */
+  }
+ 
+  .connect-button {
+    float: right;
+    border-radius: 7px;
+    border: 2px solid purple;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-left: 510px; 
+    text-decoration: none;
+    font-size: small;
+  }
+  h1{
+    font-weight: bolder;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  .left-col, .right-col{
+    font-size: medium;
+    color: antiquewhite;
+    margin-left: 80px; 
+  }
+  
+  /* {
+   
+    font-size: medium;
+    color: antiquewhite;
+    margin-right: 80px; 
+  } */
+  
+   .container2{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 120px;
+  } 
+  .h3m{
+    font-size: medium;
+    color: antiquewhite;
+  } 
+  .button{
+    width: 20%;
+    color: antiquewhite;
+    background-color: palevioletred;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left: 900px;
+    font-size: medium; 
+    margin-bottom: 50px;
+   } 
+
+   @media (max-width: 786px) {
+    .navbar a {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+
+    .left-col, .right-col {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .connect-button {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    .button {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar a {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+
+    .left-col, .right-col {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .connect-button {
+      margin-left: auto;
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .button {
+      width: 60%;
+      font-size: smaller;
+      padding: 8px;
+    }
+
+    .container2 {
+      margin-left: 10px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" style="font-size: 36px;">de3Verse</a> 
+  <a href="#">Explore</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">T&C</a>
+  <a href="#">FAQs</a>
+  <a href="#">About</a>
+  <a href="#" class="connect-button">Connect Wallet</a>
+</div>
+
+  <div class="heading">
+  <h1>Have questions ? Let's get in touch! </h1>
+ </div> 
+
+
+
+ <div class="container">
+   <div class="left-col">
+    <h3>Name</h3>
+    <h3>___________________________________________</h3>
+    <br>
+    <br>
+    <br>
+    <h3>Interested in</h3>
+    <h3>___________________________________________</h3>
+   </div>
+    
+   <div class="right-col">
+    <h3>Email Address</h3>
+    <h3>___________________________________</h3>
+    <br>
+    <br>
+    <br>
+    <h3>Phone number</h3>
+    <h3>___________________________________</h3>
+   </div>
+
+ </div>
+
+   <div class="container2">
+   <div class="h3m">
+    <h3>Message</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>________________________________________________________________________________________________________</h3>
+
+  </div>
+   </div> 
+
+
+   <div class="button">Submit</div>
+
+  
+
+
+
+
+
+
+
+</body>
+</html>
